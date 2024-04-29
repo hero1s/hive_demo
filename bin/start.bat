@@ -31,7 +31,6 @@ start  %allinone% "admin "%~dp0         ./hive.exe ./conf_publish/admin.conf    
 for /l %%i in (1,1,%multi%) do (
     start %allinone% "dbsvr%%i "%~dp0        ./hive.exe ./conf_publish/dbsvr.conf       --index=%%i
     start %allinone% "cachesvr%%i "%~dp0     ./hive.exe ./conf_publish/cachesvr.conf    --index=%%i
-	start %allinone% "chat%%i "%~dp0        ./hive.exe ./conf_publish/chat.conf         --index=%%i
 )
 
 exit

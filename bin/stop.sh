@@ -18,10 +18,4 @@ else
     exit 1
 fi
 
-echo "you have kill all PMServer !!!!!!!!!!!!!!!!!"
-pidcount=$(ps aux | grep PMServer | grep -v grep | wc -l)
-if [ $pidcount -gt 0 ]; then
-  ps aux | grep PMServer | grep -v grep | awk '{print $2}' | xargs kill -9
-fi
-
 echo "hive exist:" `ps -lef | grep "hive" | grep -v "grep" | wc -l`

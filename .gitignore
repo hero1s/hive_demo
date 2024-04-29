@@ -2,4 +2,9 @@
 .idea/
 
 bin/*.exe
+bin/hive
+bin/lua
+bin/luac
 bin/lib
+bin/logs
+bin/pid
